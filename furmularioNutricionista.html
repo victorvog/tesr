@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        body {
+        background-image: url('nutri.jpg');
+        }
+        form {
+            background-color: white; /* Cor de fundo do formulário */
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        </style>
+    <meta charset="UTF-8">
+    <title>Formulário Completo</title>
+</head>
+<body >
+    <table> 
+    <th>
+    <h1>Formulário de Cadastro</h1>
+    </th> 
+    <br>
+    <tr><td>
+    <form  action="enviar.html" method="post">
+        <label  for="nome">Nome Completo:</label>
+        <br>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+        <input type="radio" id="Masculino" name="masc" value="masculino">
+        <label for="html">masculino</label><br>
+        <input type="radio" id="Feminino" name="femi" value="feminino">
+        <label for="css">Feminino</label><br>
+        <input type="radio" id="nInfo" name="nInfo  " value="naoInforma">
+        <label for="css">Nao informa </label><br>
+        <br> <br> 
+        <label for="cpf">CPF:</label>
+        <br>
+        <input type="text" id="cpf" name="cpf" required>
+        <br> <br> 
+        <label for="crn">CRN:</label>
+        <br>
+        <input type="text" id="crn" name="crn">
+        <br> <br> 
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+        <br> <br> 
+        <label for="cep">CEP:</label>
+        <br>
+        <input type="text" id="cep" name="cep" required>
+        <br> <br> 
+        <label for="endereco">Endereço:</label>
+        <br>
+        <input type="text" id="endereco" name="endereco" required>
+        <br> <br> 
+        <label for="numero">Número:</label>
+        <br>
+        <input type="number" id="numero" name="numero" required>
+        <br> <br> 
+        <label for="telefone">Telefone:</label>
+        <br>
+        <input type="tel" id="telefone" name="telefone" required>
+        <br> <br> 
+        <label for="area_atuacao">Área de Atuação:</label>
+        <br>
+        <select id="area_atuacao" name="area_atuacao" required>
+            <option value="">Selecione...</option>
+            <option value="medicina">esporte</option>
+            <option value="direito">nutriçao </option>
+            <option value="engenharia">clinica</option>
+            <option value="outra">Outra</option>
+        </select>
+        <br> <br> 
+        <label for="comprovante_crn">Comprovante de CRN (opcional):</label>
+        <input type="file" id="comprovante_crn" name="comprovante_crn" accept=".pdf,.jpg,.png">
+        <br><br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+        </form> 
+    </tr></tr></table>
+</body>
+</html>
